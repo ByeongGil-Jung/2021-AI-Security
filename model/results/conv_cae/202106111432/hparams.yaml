@@ -1,0 +1,33 @@
+T_0: 10
+hidden_dim: 128
+hparams: !!python/object/new:domain.base.Hyperparameters
+  dictitems:
+    conv_out_kernel_size: 3
+    conv_out_size: 32
+    d_in: 0.1
+    d_out: 1
+    input_size: 784
+    is_latent_save: false
+    lambda_cent: 1
+    lambda_out: 1
+    lambda_tc: 1
+    num_classes: 10
+    num_latent: 16
+    occ: rbf_ocsvm
+lr: 0.01
+lr_scheduler: none
+model_metadata: !!python/object:domain.metadata.ModelMetadata
+  information: null
+  model_file_metadata: !!python/object:domain.metadata.ModelFileMetadata
+    current_optimal_lr_plot_path: /workspace/Project/2021_AI_security/model/results/conv_cae/202106111315/optimal_lr.png
+    current_version: '202106111432'
+    current_version_checkpoints_dir_path: /workspace/Project/2021_AI_security/model/results/conv_cae/202106111432/checkpoints
+    current_version_dir_path: /workspace/Project/2021_AI_security/model/results/conv_cae/202106111432
+    current_version_outputs_dir_path: /workspace/Project/2021_AI_security/model/results/conv_cae/202106111432/outputs
+    form: date
+    model_dir_path: /workspace/Project/2021_AI_security/model/results/conv_cae
+    model_latest_version_dir_path: /workspace/Project/2021_AI_security/model/results/conv_cae/202106111315
+    model_name: conv_cae
+    plot_ext: .png
+  model_name: conv_cae
+optimizer: adam

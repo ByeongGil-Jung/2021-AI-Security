@@ -1,0 +1,35 @@
+max_epochs: 300
+
+# Device
+gpus: 1
+accelerator: dp
+
+#is_auto_lr_find: true
+
+# Logger
+logger: tensor_board_logger
+
+# Callbacks
+callbacks:
+  status_listener_callback: true
+  model_checkpoint_callback:
+    dirpath: auto
+    monitor: "auc"
+    mode: "max"
+    save_last: true
+    save_top_k: 5  # -1 : saving all checkpoints
+#    period: 5  # If save with interval
+  early_stopping_callback:
+    monitor: "auc"
+    patience: 30
+    mode: "max"
+    strict: true
+
+# Properties
+#properties:
+#  save_dir: "aaa"
+#  model: "ae"
+
+# Hyperparameters
+hparams:
+  key: "value"

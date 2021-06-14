@@ -1,0 +1,30 @@
+lr: 0.01
+hidden_dim: 128
+optimizer: "adam"
+
+# lr scheduler
+lr_scheduler: "none"
+T_0: 10
+
+# Hyperparameters
+hparams:
+  num_classes: 10
+  num_latent: 16
+  input_size: 784  # 28 * 28
+#  latent_size: 10
+
+  conv_out_size: 32
+  conv_out_kernel_size: 3
+
+  # Loss param
+  d_in: 0.1
+  d_out: 1
+  lambda_tc: 1
+  lambda_out: 1
+  lambda_cent: 1
+
+  is_latent_save: false
+  occ: "rbf_ocsvm"
+
+#  latent_dir_path: "/workspace/Project/2021_AI_security/model/results/ae/202105030533"
+#  checkpoints_period: 4
